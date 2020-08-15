@@ -1,0 +1,47 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg fixed-top navbar-light blue-grey lighten-5" dir="rtl">
+    <links style="margin-left: 10%;">
+        <!-- <ul class="navbar-nav mr-auto nav-ul">
+            <li>
+                <span class="flex-spacer"></span>
+                <a *ngIf="!username" mat-button (click)="openLoginForm()"><span class="fa fa-sign-in fa-lg"></span> Login</a>
+                <a *ngIf="username">{{username}}</a>
+                <a *ngIf="username" mat-button (click)="logOut()"><span class="fa fa-sign-out fa-lg"></span> Logout</a>
+            </li>
+        </ul> -->
+        <ul class="navbar-nav nav-ul">
+            <!-- <li class="nav-item dropdown" dropdown routerLinkActive="anactive">
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                المستخدمون<span class="caret"></span>
+                </a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/users">عرض المستخدمون</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/ad-user">إضافة مستخدم</a>
+                </div>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect routerLink="/home">الرئيسية</a>
+            </li>
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light" mdbWavesEffect>
+                    منتجات شتوية<span class="caret"></span>
+                </a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary text" role="menu">
+                    <a class="dropdown-item waves-light text-right" mdbWavesEffect routerLink="/winter">عرض المنتجات</a>
+                    <a class="dropdown-item waves-light text-right" mdbWavesEffect routerLink="/add-winter">إضافة منتج</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light" mdbWavesEffect>
+                    منتجات صيفية<span class="caret"></span>
+                </a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary text" role="menu">
+                    <a class="dropdown-item waves-light text-right" mdbWavesEffect routerLink="/summer">عرض المنتجات</a>
+                    <a class="dropdown-item waves-light text-right" mdbWavesEffect routerLink="/add-summer">إضافة منتج</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect routerLink="/feedbacks">الرسائل</a>
+            </li>
+        </ul>
+    </links>
+</mdb-navbar>
